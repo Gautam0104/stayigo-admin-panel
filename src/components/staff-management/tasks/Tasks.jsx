@@ -73,7 +73,7 @@ const Tasks = () => {
   });
 
   const goAddTask = () => {
-    navigate('/tasks-management/addtask');
+    navigate('/staff-management/add-task');
   };
 
   return (

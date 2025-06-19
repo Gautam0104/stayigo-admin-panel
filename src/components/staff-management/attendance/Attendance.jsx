@@ -53,7 +53,7 @@ const Attendance = () => {
   });
 
   const goAddAttendance = () => {
-    navigate('/attendance-management/addattendance');
+    navigate('/staff-management/add-attendance');
   };
 
   return (

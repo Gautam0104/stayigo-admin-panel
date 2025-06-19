@@ -128,19 +128,19 @@ export const foodManagementRoutes = {
   children: [
     {
       name: 'Menu',
-      to: '/menu',
+      to: 'food-management/menu',
       icon: 'chart-pie',
       active: true
     },
     {
       name: 'Items',
-      to: '/items',
+      to: 'food-management/items',
       icon: 'chart-pie',
       active: true
     },
     {
       name: 'Inventory',
-      to: '/inventory',
+      to: 'food-management/inventory',
       icon: 'chart-pie',
       active: true
     }
@@ -152,7 +152,7 @@ export const couponManagementRoutes = {
   children: [
     {
       name: 'All Coupons',
-      to: '/all-coupons',
+      to: '/coupon-management/all-coupons',
       icon: 'chart-pie',
       active: true
     }
@@ -164,7 +164,7 @@ export const affiliateManagementRoutes = {
   children: [
     {
       name: 'All Coupons',
-      to: '/all-coupons',
+      to: '/affiliate-management/all-coupons',
       icon: 'chart-pie',
       active: true
     }
@@ -194,6 +194,7 @@ export default [
   roomManagementRoutes,
   laundaryManagementRoutes,
   staffManagementRoutes,
+  foodManagementRoutes,
   couponManagementRoutes,
   affiliateManagementRoutes,
   settingsRoutes

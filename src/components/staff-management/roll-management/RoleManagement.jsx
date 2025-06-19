@@ -39,7 +39,7 @@ const RoleManagement = () => {
   const navigate = useNavigate();
 
   const goAddRole = () => {
-    navigate('/role-management/addrole');
+    navigate('/staff-management/add-role');
   };
 
   return (

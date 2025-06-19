@@ -39,7 +39,7 @@ const StaffCategories = () => {
   const navigate = useNavigate();
 
   const goAddCategory = () => {
-    navigate('/staff-categories/addcategory');
+    navigate('/staff-management/add-staff-categories');
   };
 
   return (

@@ -56,6 +56,22 @@ import Attendance from 'components/staff-management/attendance/Attendance';
 import Tasks from 'components/staff-management/tasks/Tasks';
 import StaffCategories from 'components/staff-management/staff-categories/StaffCategories';
 import RoleManagement from 'components/staff-management/roll-management/RoleManagement';
+import AddStaff from 'components/staff-management/staff/AddStaff';
+import AddAttendance from 'components/staff-management/attendance/AddAttendance';
+import AddTask from 'components/staff-management/tasks/AddTask';
+import AddStaffCategory from 'components/staff-management/staff-categories/AddStaffCategory';
+import AddRole from 'components/staff-management/roll-management/AddRole';
+
+import Items from 'components/food-managment/items/Items';
+
+import AddItem from 'components/food-managment/items/AddItem';
+import Menu from 'components/food-managment/menu/Menu';
+import AddMenu from 'components/food-managment/menu/AddMenu';
+import AffCouponManagement from 'components/affiliate-management/CouponManagement';
+import CouponManagement from 'components/coupon-management/CouponManagement';
+
+import AddCoupon from 'components/coupon-management/AddCoupon';
+import AddAffiliate from 'components/affiliate-management/AddAffiliate';
 
 const routes = [
   {
@@ -182,6 +198,81 @@ const routes = [
               {
                 path: 'roll-management',
                 element: <RoleManagement />
+              },
+              {
+                path: 'add-staff',
+                element: <AddStaff />
+              },
+              {
+                path: 'add-attendance',
+                element: <AddAttendance />
+              },
+              {
+                path: 'add-task',
+                element: <AddTask />
+              },
+              {
+                path: 'add-staff-categories',
+                element: <AddStaffCategory />
+              },
+              {
+                path: 'add-role',
+                element: <AddRole />
+              }
+            ]
+          },
+          {
+            path: '/food-management',
+            children: [
+              {
+                path: 'items',
+                element: <Items />
+              },
+              {
+                path: 'menu',
+                element: <Menu />
+              },
+              {
+                path: 'inventory',
+                element: <Items />
+              },
+              {
+                path: 'add-item',
+                element: <AddItem />
+              },
+              {
+                path: 'add-menu',
+                element: <AddMenu />
+              },
+              {
+                path: 'add-inventory',
+                element: <AddInventory />
+              }
+            ]
+          },
+          {
+            path: 'affiliate-management',
+            children: [
+              {
+                path: 'all-coupons',
+                element: <AffCouponManagement />
+              },
+              {
+                path: 'add-affiliate',
+                element: <AddAffiliate />
+              }
+            ]
+          },
+          {
+            path: 'coupon-management',
+            children: [
+              {
+                path: 'all-coupons',
+                element: <CouponManagement />
+              },
+              {
+                path: 'add-coupon',
+                element: <AddCoupon />
               }
             ]
           }

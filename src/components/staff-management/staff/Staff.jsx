@@ -68,7 +68,7 @@ const Staff = () => {
   });
 
   const goAddStaff = () => {
-    navigate('/staff-management/addstaff');
+    navigate('/staff-management/add-staff');
   };
 
   return (
