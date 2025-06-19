@@ -79,7 +79,7 @@ const routes = [
     children: [
       // Protected Routes
       {
-        path: '/stayigo-admin-panel',
+        path: '/',
         element: (
           <ProtectedRoute>
             <MainLayout />
