@@ -175,14 +175,20 @@ export const settingsRoutes = {
   label: 'Settings',
   children: [
     {
+      name: 'Settings',
+      to: '/settings/setting',
+      icon: 'wrench',
+      active: true
+    },
+    {
       name: 'Financial Settings',
-      to: '/financial-settings',
+      to: '/settings/financial-setting',
       icon: 'wrench',
       active: true
     },
     {
       name: 'Property Settings',
-      to: '/property-settings',
+      to: '/settings/property-setting',
       icon: 'wrench',
       active: true
     }

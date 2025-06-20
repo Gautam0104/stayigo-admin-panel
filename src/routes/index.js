@@ -72,6 +72,9 @@ import CouponManagement from 'components/coupon-management/CouponManagement';
 
 import AddCoupon from 'components/coupon-management/AddCoupon';
 import AddAffiliate from 'components/affiliate-management/AddAffiliate';
+import FinancialSettings from 'components/settings/FinancialSettings';
+import PropertySettings from 'components/settings/PropertySettings';
+import SettingsPage from 'components/settings/SettingsPage';
 
 const routes = [
   {
@@ -273,6 +276,23 @@ const routes = [
               {
                 path: 'add-coupon',
                 element: <AddCoupon />
+              }
+            ]
+          },
+          {
+            path: 'settings',
+            children: [
+              {
+                path: 'setting',
+                element: <SettingsPage />
+              },
+              {
+                path: 'financial-setting',
+                element: <FinancialSettings />
+              },
+              {
+                path: 'property-setting',
+                element: <PropertySettings />
               }
             ]
           }
